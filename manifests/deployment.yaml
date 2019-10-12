@@ -2,26 +2,26 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   namespace: workshop
-  name: maiden_tiedot_kube
+  name: maiden-tiedot-kube
   labels:
-    app: maiden_tiedot_kube
+    app: maiden-tiedot-kube
 
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
   selector:
     matchLabels:
-      app: maiden_tiedot_kube
+      app: maiden-tiedot-kube
 
   template:
     metadata:
       labels:
-        app: maiden_tiedot_kube
+        app: maiden-tiedot-kube
       annotations:
     spec:
       containers:
-        - image: gcr.io/unity-ads-workshop-test/maiden_tiedot_kube:master
-          name: maiden_tiedot_kube
+        - image: gcr.io/unity-ads-workshop-test/maiden-tiedot-kube:master
+          name: maiden-tiedot-kube
           imagePullPolicy: Always
           resources:
             requests:
