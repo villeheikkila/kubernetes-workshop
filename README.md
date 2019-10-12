@@ -1,6 +1,7 @@
 # Maiden tiedot
-[Link to dockerhub](https://cloud.docker.com/repository/docker/salamy1/maiden_tiedot)
+This is a practice run for deployment to kubernetes.
+
+The app is a react app that shows country information
 
 ## Instructions
-Run the docker container on port 3000. 
-Enter country name into the search box to see details about the country
+To be updated
