@@ -2,16 +2,16 @@ kind: Service
 apiVersion: v1
 metadata:
   labels:
-    app: rasmus-nodejs-docker-webapp
-  name: rasmus-nodejs-docker-webapp
+    app: maiden_tiedot_kube
+  name: maiden_tiedot_kube
   namespace: workshop
 
 spec:
   type: NodePort
   ports:
     - name: http
-      port: 8080
+      port: 3000
       protocol: TCP
-      targetPort: 8080
+      targetPort: 3000
   selector:
-    app: rasmus-nodejs-docker-webapp
+    app: maiden_tiedot_kube
